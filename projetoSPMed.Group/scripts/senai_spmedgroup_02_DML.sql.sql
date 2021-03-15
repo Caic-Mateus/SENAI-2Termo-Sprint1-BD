@@ -77,8 +77,14 @@ VALUES				 (3, 7, 1, '14/04/2021', 'Criança com catarro na garganta')
 					,(1, 4, 3, '06/04/2021', 'Paciente com parestesia')
 					,(1, 4, 2, '09/10/2002', '')
 ;
+
+update paciente
+set dataNascimento = '07/05/2004'
+where idPaciente = 2;
+
+
 insert into  consulta (idMedico, idPaciente, idSituacao, dataConsulta)
 values (2, 1, 1, '20/10/2007');
 go
 
-SELECT * FROM consulta
+SELECT * FROM paciente
